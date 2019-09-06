@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game | Fruits &amp; Vegetables Memory Game</title>
+    <link rel="icon" href="apple.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!--Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Thasadith"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="overlay">
+      <div id="popup">
+        <!--<div id="close">X</div>
+   <h2>Gratulacje!</h2>
+   <p>Wszystkie karty zostały odkryte<br><br>
+   Twoj czas: <br>
+   Ilosc wykonanych ruchow: </p>
+   <button class="aside-btn zegar">zagraj ponownie</button>-->
+      </div>
+    </div>
+
+    <main>
+      <article class="col-xs-12 col-md-9">
+        <h1>Fruits &amp; Vegetables</h1>
+        <h6>Memory Game</h6>
+        <div id="plansza">
+          <div class="fruit" id="0"></div>
+          <div class="fruit" id="1"></div>
+          <div class="fruit" id="2"></div>
+          <div class="fruit" id="3"></div>
+          <div class="fruit" id="4"></div>
+          <br />
+          <div class="clear"></div>
+
+          <div class="fruit" id="5"></div>
+          <div class="fruit" id="6"></div>
+          <div class="fruit" id="7"></div>
+          <div class="fruit" id="8"></div>
+          <div class="fruit" id="9"></div>
+          <br />
+          <div class="clear"></div>
+
+          <div class="fruit" id="10"></div>
+          <div class="fruit" id="11"></div>
+          <div class="fruit" id="12"></div>
+          <div class="fruit" id="13"></div>
+          <div class="fruit" id="14"></div>
+          <br />
+          <div class="clear"></div>
+
+          <div class="fruit" id="15"></div>
+          <div class="fruit" id="16"></div>
+          <div class="fruit" id="17"></div>
+          <div class="fruit" id="18"></div>
+          <div class="fruit" id="19"></div>
+        </div>
+      </article>
+
+      <aside class="col-xs-12 col-md-3">
+        <div class="col-xs-3  col-xs-offset-1 col-md-12 ">
+          <div>
+            <h5>Timer</h5>
+            <p id="time">00 : 00</p>
+          </div>
+
+          <div class="btn-timer hidden-xs hidden-sm">
+            <button onclick="timerPause()" class="aside-btn zegar " id="zegar">
+              <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+              pause timer
+            </button>
+            <!--        <button  onclick="timerPlay()" class="aside-btn zegar" ><span class="glyphicon glyphicon-play" aria-hidden="true"></span> play timer</button>-->
+          </div>
+        </div>
+
+        <div class="col-xs-2 col-md-12">
+          <h5 id="up">pairs</h5>
+          <p id="selectedCards">0/10</p>
+        </div>
+        <div class="col-xs-2 col-md-12">
+          <h5 id="m">Moves</h5>
+          <p id="moves">0</p>
+        </div>
+
+        <div class="col-xs-2 col-md-12">
+          <div class="btn-timer hidden-md hidden-lg ">
+            <button onclick="timerPause()" class="aside-btn zegar " id="zegar">
+              <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+              pause timer
+            </button>
+            <!--        <button  onclick="timerPlay()" class="aside-btn zegar" ><span class="glyphicon glyphicon-play" aria-hidden="true"></span> play timer</button>-->
+          </div>
+          <button onclick="startAgain()" class="aside-btn rozpocznij">
+            <span class="glyphicon glyphicon-repeat" aria-hidden="true"></span>
+            Play again
+          </button>
+        </div>
+      </aside>
+      <div class="clear"></div>
+    </main>
+
+    <footer>
+      Game created by <a href="http://anielakm.pl">Aniela Katana-Matłok</a>.
+      &copy;All right reserved
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
